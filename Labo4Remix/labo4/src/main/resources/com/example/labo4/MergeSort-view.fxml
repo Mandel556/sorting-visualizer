@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labo4.MergeSortController">
+   <children>
+      <Label fx:id="labelMerge" layoutX="259.0" layoutY="14.0" prefHeight="26.0" prefWidth="94.0" text="MergeSort" textAlignment="CENTER" underline="true">
+         <font>
+            <Font fx:id="fontMerge" name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="barChartMerge" layoutY="40.0" prefHeight="315.0" prefWidth="600.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="stopMerge" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" text="Stop" />
+      <Button fx:id="startMerge" layoutX="482.0" layoutY="361.0" mnemonicParsing="false" text="Start" />
+   </children>
+</AnchorPane>
